@@ -1,0 +1,11 @@
+{
+  "name": "hit-word-live",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/copy-assets.mjs",
+    "test": "npm run build && node --test dist/tests/game.test.js",
+    "start": "node dist/server/index.js"
+  }
+}
